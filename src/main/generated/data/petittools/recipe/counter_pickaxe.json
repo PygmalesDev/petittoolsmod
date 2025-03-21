@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "c": "petittools:creeper_sack",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "ccc",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "petittools:counter_pickaxe"
+  }
+}

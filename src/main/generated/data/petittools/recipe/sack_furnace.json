@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": "petittools:creeper_sack_block"
+  },
+  "pattern": [
+    "ccc",
+    "c c",
+    "ccc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "petittools:sack_furnace"
+  }
+}

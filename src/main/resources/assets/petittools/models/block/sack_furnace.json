@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "petittools:block/sack_furnace_front",
+    "side": "petittools:block/sack_furnace_side",
+    "top": "petittools:block/sack_furnace_top"
+  }
+}

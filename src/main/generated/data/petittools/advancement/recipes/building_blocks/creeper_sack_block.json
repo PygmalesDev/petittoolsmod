@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_creeper_sack": {
+      "conditions": {
+        "items": [
+          {
+            "items": "petittools:creeper_sack"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "petittools:creeper_sack_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_creeper_sack"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "petittools:creeper_sack_block"
+    ]
+  }
+}

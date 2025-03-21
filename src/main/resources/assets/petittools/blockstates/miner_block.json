@@ -1,0 +1,37 @@
+{
+    "variants": {
+        "closed=false,facing=east": {
+            "model": "petittools:block/miner_block",
+            "y": 90
+        },
+        "closed=false,facing=west": {
+            "model": "petittools:block/miner_block",
+            "y": 270
+        },
+        "closed=false,facing=north": {
+            "model": "petittools:block/miner_block",
+            "y": 0
+        },
+        "closed=false,facing=south": {
+            "model": "petittools:block/miner_block",
+            "y": 180
+        },
+
+        "closed=true,facing=east": {
+            "model": "petittools:block/closed_miner_block",
+            "y": 90
+        },
+        "closed=true,facing=west": {
+            "model": "petittools:block/closed_miner_block",
+            "y": 270
+        },
+        "closed=true,facing=north": {
+            "model": "petittools:block/closed_miner_block",
+            "y": 0
+        },
+        "closed=true,facing=south": {
+            "model": "petittools:block/closed_miner_block",
+            "y": 180
+        }
+    }
+}

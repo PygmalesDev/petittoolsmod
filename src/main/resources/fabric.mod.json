@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "petittools",
+	"version": "${version}",
+	"name": "Petit Tools",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/petittools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pygmales.petittools.PetitTools"
+		],
+		"client": [
+			"net.pygmales.petittools.PetitToolsClient"
+		],
+		"fabric-datagen": [
+			"net.pygmales.petittools.PetitToolsDataGenerator"
+		]
+	},
+	"mixins": [
+		"petittools.mixins.json",
+		{
+			"config": "petittools.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

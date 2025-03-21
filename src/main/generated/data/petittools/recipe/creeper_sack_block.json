@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "petittools:creeper_sack",
+    "petittools:creeper_sack",
+    "petittools:creeper_sack",
+    "petittools:creeper_sack"
+  ],
+  "result": {
+    "count": 1,
+    "id": "petittools:creeper_sack_block"
+  }
+}

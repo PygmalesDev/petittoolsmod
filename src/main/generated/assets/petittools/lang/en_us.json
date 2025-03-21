@@ -1,0 +1,14 @@
+{
+  "container.petittools.miner_block": "Miner Block",
+  "item.petittools.counter_block": "Counter Block",
+  "item.petittools.counter_pickaxe": "Counter Pickaxe",
+  "item.petittools.counter_pickaxe.item": "Mined %1$s blocks",
+  "item.petittools.creeper_sack": "Creeper Sack",
+  "item.petittools.creeper_sack.item": "Nasty but edible",
+  "item.petittools.creeper_sack_block": "Creeper Sack Block",
+  "item.petittools.miner_block": "Miner Block",
+  "item.petittools.sack_furnace": "Sack Furnace",
+  "item.petittools.suspicious_substance": "Suspicious Substance",
+  "item.petittools.suspicious_substance.item": "Strange mass with properties similar to charcoal",
+  "itemGroup.petittools.main_group": "Petit Tools"
+}

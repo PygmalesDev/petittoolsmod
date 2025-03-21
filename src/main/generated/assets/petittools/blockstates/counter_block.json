@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "petittools:block/counter_block"
+    }
+  }
+}

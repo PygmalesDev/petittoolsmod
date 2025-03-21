@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "petittools:block/creeper_sack_block"
+    }
+  }
+}

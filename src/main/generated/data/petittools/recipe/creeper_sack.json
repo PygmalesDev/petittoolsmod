@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "petittools:creeper_sack_block"
+  ],
+  "result": {
+    "count": 4,
+    "id": "petittools:creeper_sack"
+  }
+}

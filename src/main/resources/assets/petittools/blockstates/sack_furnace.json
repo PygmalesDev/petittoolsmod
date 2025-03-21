@@ -1,0 +1,37 @@
+{
+    "variants": {
+        "lit=false,facing=east": {
+            "model": "petittools:block/sack_furnace",
+            "y": 90
+        },
+        "lit=false,facing=west": {
+            "model": "petittools:block/sack_furnace",
+            "y": 270
+        },
+        "lit=false,facing=north": {
+            "model": "petittools:block/sack_furnace",
+            "y": 0
+        },
+        "lit=false,facing=south": {
+            "model": "petittools:block/sack_furnace",
+            "y": 180
+        },
+
+        "lit=true,facing=east": {
+            "model": "petittools:block/lit_sack_furnace",
+            "y": 90
+        },
+        "lit=true,facing=west": {
+            "model": "petittools:block/lit_sack_furnace",
+            "y": 270
+        },
+        "lit=true,facing=north": {
+            "model": "petittools:block/lit_sack_furnace",
+            "y": 0
+        },
+        "lit=true,facing=south": {
+            "model": "petittools:block/lit_sack_furnace",
+            "y": 180
+        }
+    }
+}
