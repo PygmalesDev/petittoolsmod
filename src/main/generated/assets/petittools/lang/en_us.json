@@ -1,5 +1,6 @@
 {
   "container.petittools.miner_block": "Miner Block",
+  "item.petittools.book_block": "Book Block",
   "item.petittools.counter_block": "Counter Block",
   "item.petittools.counter_pickaxe": "Counter Pickaxe",
   "item.petittools.counter_pickaxe.item": "Mined %1$s blocks",

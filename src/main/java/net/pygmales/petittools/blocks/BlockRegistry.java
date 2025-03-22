@@ -11,6 +11,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.pygmales.petittools.PetitTools;
+import net.pygmales.petittools.blocks.custom.BookBlock;
 import net.pygmales.petittools.item_groups.ItemGroups;
 
 import java.util.function.Function;
@@ -36,6 +37,11 @@ public class BlockRegistry {
             MinerBlock.Settings.create(), true);
     public static final Item MINER_BLOCK_ITEM = MINER_BLOCK.asItem();
 
+    public static final Block BOOK_BLOCK = registerBlock(
+            "book_block", BookBlock::new,
+            BookBlock.Settings.create(), true);
+    public static final Item BOOK_BLOCK_ITEM = BOOK_BLOCK.asItem();
+
     public static Block registerBlock(String blockName, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean registerItem) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, PetitTools.id(blockName));
         Block block = blockFactory.apply(settings.registryKey(key));
@@ -57,7 +63,8 @@ public class BlockRegistry {
                 CREEPER_SACK_BLOCK_ITEM,
                 SACK_FURNACE_BLOCK_ITEM,
                 COUNTER_BLOCK_ITEM,
-                MINER_BLOCK_ITEM
+                MINER_BLOCK_ITEM,
+                BOOK_BLOCK_ITEM
         );
     }
 

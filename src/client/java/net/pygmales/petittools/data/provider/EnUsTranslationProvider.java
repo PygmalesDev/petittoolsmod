@@ -42,6 +42,7 @@ public class EnUsTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(BlockRegistry.COUNTER_BLOCK_ITEM, "Counter Block");
         translationBuilder.add(BlockRegistry.MINER_BLOCK_ITEM, "Miner Block");
         translationBuilder.add(BlockRegistry.SACK_FURNACE_BLOCK_ITEM, "Sack Furnace");
+        translationBuilder.add(BlockRegistry.BOOK_BLOCK_ITEM, "Book Block");
 
         addText(translationBuilder, ItemGroups.MAIN_GROUP_TITLE, "Petit Tools");
         addText(translationBuilder, MinerBlockEntity.TITLE, "Miner Block");

@@ -13,6 +13,8 @@ public class BlockEntityTypeInit {
             FabricBlockEntityTypeBuilder.create(CounterBlockEntity::new, BlockRegistry.COUNTER_BLOCK).build());
     public static final BlockEntityType<MinerBlockEntity> MINER_BLOCK_ENTITY = register("miner_block_entity",
             FabricBlockEntityTypeBuilder.create(MinerBlockEntity::new, BlockRegistry.MINER_BLOCK).build());
+    public static final BlockEntityType<BookBlockEntity> BOOK_BLOCK_ENTITY = register("book_block_entity",
+            FabricBlockEntityTypeBuilder.create(BookBlockEntity::new, BlockRegistry.BOOK_BLOCK).build());
 
     public static <T extends BlockEntity> BlockEntityType<T> register(String name, BlockEntityType<T> type) {
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, PetitTools.id(name), type);

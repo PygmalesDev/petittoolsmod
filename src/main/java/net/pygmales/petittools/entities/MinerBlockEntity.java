@@ -101,7 +101,7 @@ public class MinerBlockEntity extends BlockEntity implements TickableBlockEntity
 
         var minerState = world.getBlockState(pos);
         ItemStack fuelStack = minerInventory.getStack(0);
-        if (fuelStack.isEmpty() && workingTicks == 0) {
+        if (fuelStack.isEmpty() && !world.getFuelRegistry().isFuel(fuelStack) && workingTicks == 0) {
             if (minerState.get(MinerBlock.CLOSED))
                 world.setBlockState(pos, minerState.with(MinerBlock.CLOSED, false));
             return;

@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.*;
 import net.pygmales.petittools.blocks.BlockRegistry;
 import net.pygmales.petittools.items.ItemRegistry;
-
 public class ModelProvider extends FabricModelProvider {
 
     public ModelProvider(FabricDataOutput output) {
