@@ -12,6 +12,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.pygmales.petittools.blocks.BlockRegistry;
 import net.pygmales.petittools.items.ItemRegistry;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class RecipeProvider extends FabricRecipeProvider {
@@ -55,6 +56,11 @@ public class RecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(BlockRegistry.CREEPER_SACK_BLOCK),
                                 conditionsFromItem(BlockRegistry.CREEPER_SACK_BLOCK))
                         .offerTo(recipeExporter);
+
+                offerSmelting(List.of(ItemRegistry.RAW_AZURITE_ORE, BlockRegistry.AZURITE_ORE_BLOCK_ITEM),
+                        RecipeCategory.MISC, ItemRegistry.AZURITE_INGOT,
+                        3.0f, 10, "azurite_ore"
+                );
             }
         };
     }

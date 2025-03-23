@@ -17,6 +17,11 @@ import net.pygmales.petittools.item_groups.ItemGroups;
 import java.util.function.Function;
 
 public class BlockRegistry {
+    public static final Block AZURITE_ORE_BLOCK = registerBlock(
+            "azurite_ore_block", Block::new, AbstractBlock.Settings.create()
+                    .hardness(1.0f).requiresTool().sounds(BlockSoundGroup.STONE).luminance(settings -> 15), true);
+    public static final Item AZURITE_ORE_BLOCK_ITEM = AZURITE_ORE_BLOCK.asItem();
+
     public static final Block CREEPER_SACK_BLOCK = registerBlock(
             "creeper_sack_block", Block::new,
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS), true);
@@ -64,7 +69,8 @@ public class BlockRegistry {
                 SACK_FURNACE_BLOCK_ITEM,
                 COUNTER_BLOCK_ITEM,
                 MINER_BLOCK_ITEM,
-                BOOK_BLOCK_ITEM
+                BOOK_BLOCK_ITEM,
+                AZURITE_ORE_BLOCK_ITEM
         );
     }
 

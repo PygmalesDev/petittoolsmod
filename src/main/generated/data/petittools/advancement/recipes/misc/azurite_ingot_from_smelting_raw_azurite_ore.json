@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_azurite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "petittools:raw_azurite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:azurite_ingot_from_smelting_raw_azurite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_azurite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:azurite_ingot_from_smelting_raw_azurite_ore"
+    ]
+  }
+}

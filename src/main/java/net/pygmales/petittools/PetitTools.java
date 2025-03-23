@@ -10,6 +10,7 @@ import net.pygmales.petittools.entities.MinerBlockEntity;
 import net.pygmales.petittools.item_groups.ItemGroups;
 import net.pygmales.petittools.items.ItemRegistry;
 import net.pygmales.petittools.screenhnadler.ScreenHandlerTypeInit;
+import net.pygmales.petittools.worldgen.BiomeModificationInit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,6 +27,7 @@ public class PetitTools implements ModInitializer {
 		BlockRegistry.initialize();
 		BlockEntityTypeInit.initialize();
 		ScreenHandlerTypeInit.initialize();
+		BiomeModificationInit.initialize();
 
 		ItemStorage.SIDED.registerForBlockEntity(MinerBlockEntity::getInventoryProvider, BlockEntityTypeInit.MINER_BLOCK_ENTITY);
 

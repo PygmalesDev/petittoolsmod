@@ -38,11 +38,15 @@ public class EnUsTranslationProvider extends FabricLanguageProvider {
         translationBuilder.add(ItemRegistry.CREEPER_SACK, "Creeper Sack");
         addText(translationBuilder, TranslationKeys.CREEPER_SACK_INFO, "Nasty but edible");
 
+        translationBuilder.add(ItemRegistry.RAW_AZURITE_ORE, "Raw Azurite Ore");
+        translationBuilder.add(ItemRegistry.AZURITE_INGOT, "Azurite Ingot");
+
         translationBuilder.add(BlockRegistry.CREEPER_SACK_BLOCK_ITEM, "Creeper Sack Block");
         translationBuilder.add(BlockRegistry.COUNTER_BLOCK_ITEM, "Counter Block");
         translationBuilder.add(BlockRegistry.MINER_BLOCK_ITEM, "Miner Block");
         translationBuilder.add(BlockRegistry.SACK_FURNACE_BLOCK_ITEM, "Sack Furnace");
         translationBuilder.add(BlockRegistry.BOOK_BLOCK_ITEM, "Book Block");
+        translationBuilder.add(BlockRegistry.AZURITE_ORE_BLOCK_ITEM, "Azurite Ore");
 
         addText(translationBuilder, ItemGroups.MAIN_GROUP_TITLE, "Petit Tools");
         addText(translationBuilder, MinerBlockEntity.TITLE, "Miner Block");

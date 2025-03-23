@@ -1,5 +1,7 @@
 {
+  "block.petittools.azurite_ore_block": "Azurite Ore",
   "container.petittools.miner_block": "Miner Block",
+  "item.petittools.azurite_ingot": "Azurite Ingot",
   "item.petittools.book_block": "Book Block",
   "item.petittools.counter_block": "Counter Block",
   "item.petittools.counter_pickaxe": "Counter Pickaxe",
@@ -8,6 +10,7 @@
   "item.petittools.creeper_sack.item": "Nasty but edible",
   "item.petittools.creeper_sack_block": "Creeper Sack Block",
   "item.petittools.miner_block": "Miner Block",
+  "item.petittools.raw_azurite_ore": "Raw Azurite Ore",
   "item.petittools.sack_furnace": "Sack Furnace",
   "item.petittools.suspicious_substance": "Suspicious Substance",
   "item.petittools.suspicious_substance.item": "Strange mass with properties similar to charcoal",

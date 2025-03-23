@@ -15,6 +15,7 @@ public class ModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.CREEPER_SACK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.COUNTER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.AZURITE_ORE_BLOCK);
     }
 
     @Override
@@ -22,5 +23,7 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemRegistry.SUSPICIOUS_SUBSTANCE, Models.GENERATED);
         itemModelGenerator.register(ItemRegistry.CREEPER_SACK, Models.GENERATED);
         itemModelGenerator.register(ItemRegistry.COUNTER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemRegistry.RAW_AZURITE_ORE, Models.GENERATED);
+        itemModelGenerator.register(ItemRegistry.AZURITE_INGOT, Models.GENERATED);
     }
 }

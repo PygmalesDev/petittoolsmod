@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 10,
+  "experience": 3.0,
+  "group": "azurite_ore",
+  "ingredient": "petittools:azurite_ore_block",
+  "result": {
+    "id": "petittools:azurite_ingot"
+  }
+}

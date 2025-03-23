@@ -15,6 +15,8 @@ import java.util.function.Function;
 import static net.pygmales.petittools.common.Const.*;
 
 public class ItemRegistry {
+    public static final Item RAW_AZURITE_ORE = register("raw_azurite_ore", Item::new, new Item.Settings());
+    public static final Item AZURITE_INGOT = register("azurite_ingot", Item::new, new Item.Settings());
     public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", SuspiciousSubstance::new, new Item.Settings());
     public static final Item CREEPER_SACK = register("creeper_sack", CreeperSack::new, new Item.Settings());
     public static final Item COUNTER_PICKAXE = register("counter_pickaxe", settings ->
@@ -32,7 +34,7 @@ public class ItemRegistry {
 
     public static void initialize() {
         ItemGroups.mainAddAll(
-            SUSPICIOUS_SUBSTANCE, CREEPER_SACK, COUNTER_PICKAXE
+            SUSPICIOUS_SUBSTANCE, CREEPER_SACK, COUNTER_PICKAXE, RAW_AZURITE_ORE, AZURITE_INGOT
         );
 
         // Registering items as fuel sources
