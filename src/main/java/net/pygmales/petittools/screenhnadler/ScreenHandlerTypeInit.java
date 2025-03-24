@@ -10,9 +10,11 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.pygmales.petittools.PetitTools;
 import net.pygmales.petittools.network.BlockPosPayload;
+import net.pygmales.petittools.network.TestBookPayload;
 
 public class ScreenHandlerTypeInit {
     public static final ScreenHandlerType<MinerBlockScreenHandler> MINER_BLOCK = register("miner_block", MinerBlockScreenHandler::new, BlockPosPayload.PACKET_CODEC);
+    public static final ScreenHandlerType<TestBookScreenHandler> TEST_BOOK = register("test_book", TestBookScreenHandler::new, TestBookPayload.PACKET_CODEC);
 
     public static <T extends ScreenHandler, D extends CustomPayload>ExtendedScreenHandlerType<T, D>
             register(String name,

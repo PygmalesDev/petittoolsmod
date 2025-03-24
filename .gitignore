@@ -7,6 +7,7 @@ classes/
 logs/
 src/main/generated/.cache/
 
+*.bbmodel
 *.aseprite
 
 # eclipse

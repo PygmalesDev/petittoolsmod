@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.pygmales.petittools.PetitTools;
 import net.pygmales.petittools.blocks.custom.BookBlock;
 import net.pygmales.petittools.item_groups.ItemGroups;
+import net.pygmales.petittools.items.ItemRegistry;
 
 import java.util.function.Function;
 
@@ -59,19 +60,13 @@ public class BlockRegistry {
     public static void registerBlockItem(String blockName, Block block) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, PetitTools.id(blockName));
         BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(key));
+        ItemRegistry.ITEMS.add(blockItem);
+        ItemGroups.mainAddAll(blockItem);
 
         Registry.register(Registries.ITEM, key, blockItem);
     }
 
     public static void initialize() {
-        ItemGroups.mainAddAll(
-                CREEPER_SACK_BLOCK_ITEM,
-                SACK_FURNACE_BLOCK_ITEM,
-                COUNTER_BLOCK_ITEM,
-                MINER_BLOCK_ITEM,
-                BOOK_BLOCK_ITEM,
-                AZURITE_ORE_BLOCK_ITEM
-        );
     }
 
 }
